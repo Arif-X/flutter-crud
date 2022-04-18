@@ -5,7 +5,7 @@ import 'package:http/http.dart';
 
 class EmployeeService {
 
-  final String baseUrl = "http://test.pmiigalileo.or.id";
+  final String baseUrl = "http://localhost:8000";
 
   Future<List<EmployeeModel>> getEmployees() async {
     final response = await get('$baseUrl/api/employee');
